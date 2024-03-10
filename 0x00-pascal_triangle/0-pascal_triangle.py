@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""a function that computes pascal triangle"""
+"""
+a function that computes pascal triangle
+"""
 
 def pascal_triangle(n):
-    '''
+    """
     create pascal triangle with n number of rows
-    '''
+    """
     # create empty list to contain triangle
     triangle = []
 
@@ -28,3 +30,4 @@ def pascal_triangle(n):
         # append the row to the triangle
         triangle.append(row)
     return triangle
+
