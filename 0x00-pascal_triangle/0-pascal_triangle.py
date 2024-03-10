@@ -4,6 +4,10 @@ def pascal_triangle(n):
     '''
     # create empty list to contain triangle
     triangle = []
+
+    # retun triangle if n is less than 0r equal 0
+    if n <= 0:
+        return triangle
     
     # a loop to genetrate n number of rows
     for i in range(n):
