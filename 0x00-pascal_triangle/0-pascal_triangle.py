@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""a function that computes pascal triangle"""
+
 def pascal_triangle(n):
     '''
     create pascal triangle with n number of rows
