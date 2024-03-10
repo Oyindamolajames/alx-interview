@@ -9,11 +9,9 @@ def pascal_triangle(n):
     """
     # create empty list to contain triangle
     triangle = []
-
     # retun triangle if n is less than 0r equal 0
     if n <= 0:
         return triangle
-    
     # a loop to genetrate n number of rows
     for i in range(n):
         # set the row to start with 1
@@ -22,12 +20,11 @@ def pascal_triangle(n):
         if triangle:
             # get the previous row
             last_row = triangle[-1]
-            # sum the adjacnet number in previous row 
+            # sum the adjacnet number in previous row
             for j in range(len(last_row) - 1):
                 row.append(last_row[j] + last_row[j + 1])
             # append 1 to the end of the row
-            row.append(1)    
+            row.append(1)
         # append the row to the triangle
         triangle.append(row)
     return triangle
-
